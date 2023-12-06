@@ -1,3 +1,26 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title class="ion-padding-vertical">Mi Lista de Compras</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <router-outlet></router-outlet>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar class="tabs" slot="bottom">
+          <ion-tab-button tab="list">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-label>Lista Compra</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="add">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>Añadir Item</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
