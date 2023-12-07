@@ -66,3 +66,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/02_shoppingList_Android/
+/02_shoppingList_iOS/
+/node_modules/
+/.vscode/
+/.nx/
+/.angular/
+/www/
